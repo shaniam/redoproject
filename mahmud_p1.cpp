@@ -66,12 +66,84 @@ int main(int argc, char* argv[]){
 			begin=find(lis, state1);
 			end=find(lis,state2);
 			if (begin!=NULL && end!=NULL){
-				if(trans==1){
+				/*if(trans==1){
 				begin->addOne(end);
 				}
 				else{
 				begin->addZero(end);
-				}
+				}*/
+				if(trans.compare("1")==0){
+					begin->addOne(end);}
+				else if(trans.compare("0")==0){
+					begin->addZero(end);}
+				else if(trans.compare("2")==0){
+					begin->addTwo(end);}
+				else if(trans.compare("3")==0){
+					begin->addThree(end);}
+				else if(trans.compare("4")==0){
+					begin->addFour(end);}
+				else if(trans.compare("5")==0){
+					begin->addFive(end);}
+				else if(trans.compare("6")==0){
+					begin->addSix(end);}
+				else if(trans.compare("7")==0){
+					begins->addSeven(end);}
+				else if(trans.compare("8")==0){
+					begin->addEight(end);}
+				else if(trans.compare("9")==0){
+					begin->addNine(end);}
+				else if (trans.compare("a")==0){
+					begin->addAs(end);}
+				else if (trans.compare("b")==0){
+					begin->addBs(end);}
+				else if (trans.compare("c")==0){
+					begin->addCs(end);}
+				else if (trans.compare("d")==0){
+					begin->addDs(end);}
+				else if (trans.compare("e")==0){
+					begin->addEs(end);}
+				else if (trans.compare("f")==0){
+					begin->addFs(end);}
+				else if (trans.compare("g")==0){
+					begin->addGs(end);}
+				else if (trans.compare("h")==0){
+					begin->addHs(end);}
+				else if (trans.compare("i")==0){
+					begin->addIs(end);}
+				else if (trans.compare("j")==0){
+					begin->addJs(end);}
+				else if (trans.compare("k")==0){
+					begin->addKs(end);}
+				else if (trans.compare("l")==0){
+					begin->addLs(end);}
+				else if (trans.compare("m")==0){
+					begin->addMs(end);}
+				else if (trans.compare("n")==0){
+					begin->addNs(end);}
+				else if (trans.compare("o")==0){
+					begin->addOs(end);}
+				else if (trans.compare("p")==0){
+					begin->addPs(end);}
+				else if (trans.compare("q")==0){
+					begin->addQs(end);}
+				else if (trans.compare("r")==0){
+					begin->addRs(end);}
+				else if (trans.compare("s")==0){
+					begin->addSs(end);}
+				else if (trans.compare("t")==0){
+					begin->addTs(end);}
+				else if (trans.compare("u")==0){
+					begin->addUs(end);}
+				else if (trans.compare("v")==0){
+					begin->addVs(end);}
+				else if (trans.compare("w")==0){
+					begin->addWs(end);}
+				else if (trans.compare("x")==0){
+					begin->addXs(end);}
+				else if (trans.compare("y")==0){
+					begin->addYs(end);}
+				else if (trans.compare("z")==0){
+					begin->addZs(end);}
 			}
 			else if(begin!=NULL && end==NULL){
 				end=new Node(state2, false, false);
